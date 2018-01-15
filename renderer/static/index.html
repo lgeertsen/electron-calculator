@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="mathquill-0.10.1/mathquill.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.min.js"></script>
+    <script>
+    var MQ = MathQuill.getInterface(2);
+    </script>
+  </head>
+  <body>
+    <p><span id="answer">x=</span></p>
+
+<script>
+  var answerSpan = document.getElementById('answer');
+  var answerMathField = MQ.MathField(answerSpan, {
+    handlers: {
+      edit: function() {
+        
+      }
+    }
+  });
+</script>
+  </body>
+</html>

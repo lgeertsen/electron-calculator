@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Bitnami\nodejs-9.3.0-0\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Bitnami\nodejs-9.3.0-0/python;C:\Bitnami\nodejs-9.3.0-0/python\scripts;C:\Bitnami\nodejs-9.3.0-0/nodejs;C:\Bitnami\nodejs-9.3.0-0\imagemagick;C:\Bitnami\nodejs-9.3.0-0/git\cmd;C:\Bitnami\nodejs-9.3.0-0/common\bin;C:\ProgramData\Oracle\Java\javapath;C:\Ruby21\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Dell\DW WLAN Card;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsof;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\HashiCorp\Vagrant\bin;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.2.0\bin;C:\Ruby22-x64\bin;D:\Utilisateurs\lordi\AppData\Local\atom\bin;D:\Utilisateurs\lordi\AppData\Local\Yarn\bin;D:\Utilisateurs\lordi\AppData\Roaming\Composer\vendor\bin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  9.3.0
+
+Platform: 
+  win32 ia32
+
+npm manifest: 
+  {
+    "name": "awesome-drinking-game",
+    "productName": "Awesome Drinking Game",
+    "version": "1.0.0",
+    "main": "main/index.js",
+    "license": "MIT",
+    "repository": "",
+    "scripts": {
+      "start": "electron .",
+      "build": "next build renderer && next export renderer",
+      "dist": "npm run build && build --dir",
+      "buildExe": "npm run build && build"
+    },
+    "build": {
+      "files": [
+        "**/*",
+        "!renderer",
+        "renderer/out",
+        "renderer/static"
+      ],
+      "win": {
+        "icon": "main/Cedarseed-Cocktails-Tequila-Sunrise.ico"
+      }
+    },
+    "devDependencies": {
+      "electron": "1.7.5",
+      "electron-builder": "19.22.1",
+      "next": "3.0.6",
+      "react": "15.6.1",
+      "react-dom": "15.6.1"
+    },
+    "dependencies": {
+      "app-root-path": "2.0.1",
+      "electron-is-dev": "0.3.0",
+      "electron-next": "3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.61.173:443
+      at Object._errnoException (util.js:999:13)
+      at _exceptionWithHostPort (util.js:1020:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1207:14)
